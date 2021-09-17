@@ -1,0 +1,10 @@
+SELECT * FROM `products` WHERE `name` LIKE 'Adiddas K 123';
+SELECT * FROM `products` WHERE `name` LIKE '%123';
+SELECT * FROM `products` WHERE `name` LIKE '%das%';
+SELECT * FROM `products` WHERE `price` > 1500;
+SELECT * FROM `products` WHERE `price` > 1000 AND `price` < 100500;
+SELECT * FROM `orders` WHERE `saleDate` > '2021-09-01';
+SELECT * FROM `orders` WHERE `saleDate` > '2021-09-01' AND `saleDate` < '2021-09-03';
+SELECT * FROM `users` WHERE `email` = 'admin@gmail.com';
+SELECT * FROM `users` WHERE `email` IN( 'admin@gmail.com' , 'admin2@gmail.com');
+SELECT * FROM products as p LEFT JOIN users as u ON p.userID = u.id;
