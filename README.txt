@@ -1,0 +1,1 @@
+Task : design a database. The database should contain tables: users, products, customers,orders,orderitems. Create links between the required tables. Create multiple queries in the database. Push all in git. Branch - master.
